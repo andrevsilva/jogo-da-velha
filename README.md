@@ -1,70 +1,104 @@
-# Getting Started with Create React App
+# 🕹️ Jogo da Velha (Tic Tac Toe)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+O **Jogo da Velha** (também conhecido como _Tic-Tac-Toe_ em inglês) é um clássico jogo de estratégia simples para dois jogadores.  
+Sua origem remonta a cerca de **3.500 anos atrás no Egito**, onde escavações arqueológicas encontraram tabuleiros semelhantes esculpidos em pedra.
 
-## Available Scripts
+No **século XIX**, ganhou popularidade no Ocidente, especialmente nos **Estados Unidos** e **Reino Unido**, sendo registrado em livros de jogos e se tornando um passatempo muito comum para crianças e adultos.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 🎮 Como Jogar
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. **Número de jogadores:** 2.
+2. **Escolha de idioma:**
+   - 🇺🇸 Inglês
+   - 🇧🇷 Português
+3. **Defina os nomes dos jogadores:** Jogador 1 e Jogador 2.
+4. **Selecione o número de rodadas** (caso não selecione, será usado o padrão de **11 rodadas**).
+5. O tabuleiro é uma grade **3x3**.
+6. Um jogador utiliza o símbolo **X** e o outro **O**.
+7. Os jogadores se alternam posicionando seus símbolos em casas vazias.
+8. **Objetivo:** alinhar 3 símbolos iguais na **horizontal**, **vertical** ou **diagonal**.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## 🏆 Condições de Vitória
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Vitória:** o jogador que alinhar 3 símbolos iguais primeiro.
+- **Empate:** se todas as casas forem preenchidas sem que haja um vencedor.
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🚀 Como Rodar o Projeto
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. **Clone este repositório:**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+   ```bash
+   git clone git@github.com:andrevsilva/jogo-da-velha.git
+   ```
 
-### `npm run eject`
+2. **Entre na pasta do projeto:**
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+   ```bash
+   cd jogo-da-velha
+   ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+3. **Instale as dependências:**
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+   ```bash
+   npm install
+   ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+4. **Inicie o projeto:**
 
-## Learn More
+   ```bash
+   npm start
+   ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+5. **Acesse no navegador:**  
+   Normalmente abrirá automaticamente em `http://localhost:3000`.  
+   Caso não abra, acesse manualmente esse endereço no navegador.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+## 🎨 Funcionalidades
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Além de escolher a linguagem e os nomes dos jogadores, é possível personalizar **todo o visual do jogo**:
 
-### Analyzing the Bundle Size
+- Cor do **X**
+- Cor do **O**
+- Cor de fundo
+- Cor do tabuleiro
+- Cor das casas
+- Cor das bordas
+- Cor do **hover** das casas
+- Cor de fundo do placar
+- Cor dos botões
+- Cor do texto dos botões
+- Cor do **hover** dos botões
+- Cor do temporizador
+- Cor do texto geral
+- Cor de fundo do menu
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
+## 🛠️ Tecnologias Utilizadas
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- **React** – Utilizando Hooks nativos, sem frameworks adicionais.
+- **React Router DOM** – Controle de rotas.
+- **Styled Components** – Estilização dinâmica e componentizada.
+- **i18n** – Internacionalização para melhor experiência do usuário (UX).
 
-### Advanced Configuration
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## 📜 Licença
 
-### Deployment
+Este projeto é de uso livre para fins de estudo e aprendizado.  
+Sinta-se à vontade para clonar, modificar e usar como base para outros projetos.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+---
 
-### `npm run build` fails to minify
+## 👨‍💻 Autor
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Desenvolvido por **André Silva** 💻  
+Se gostou do projeto, ⭐ no repositório ajuda bastante!
