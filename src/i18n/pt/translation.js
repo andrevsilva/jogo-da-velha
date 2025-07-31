@@ -12,8 +12,8 @@ const translation = {
   },
   GAME: {
     TITLE: 'Jogo da Velha',
-    PLAYER_1_LABEL: 'Jogador 1:',
-    PLAYER_2_LABEL: 'Jogador 2:',
+    PLAYER_1_LABEL: 'Jogador 1: {{player}}',
+    PLAYER_2_LABEL: 'Jogador 2: {{player}}',
     ROUND_INFO: 'Número de rodadas:',
     CURRENT_PLAYER: 'Jogador Atual:',
     WINNER_MESSAGE: 'Parabéns! Jogador vencedor:',
@@ -57,11 +57,17 @@ const translation = {
     COLOR_FOR_MENU_BACKGROUND: 'Cor do fundo do menu:',
   },
   SCOREBOARD: {
-    VICTORIES_X: 'Vitórias X:',
-    VICTORIES_O: 'Vitórias O:',
+    VICTORIES_X: 'Vitórias de {{player}} (X): {{score}}',
+    VICTORIES_O: 'Vitórias de {{player}} (O): {{score}}',
     DRAWS: 'Empates:',
     RESET_BUTTON: 'Resetar Placar',
-    RESET_ARIA_LABEL: 'Resetar pontuação',
+    CHANGE_ROUNDS: 'Configurações de jogo',
+    HOME: 'Tradução',
+    ARIA_LABEL: {
+      RESET_ARIA_LABEL: 'Resetar pontuação',
+      CONFIG_ARIA_LABEL: 'Configurar Jogo',
+      HOME_ARIA_LABEL: 'Selecionar tradução',
+    },
   },
   TIMER: {
     TIMER_BOX: 'Tempo restante:',

@@ -12,8 +12,8 @@ const translation = {
   },
   GAME: {
     TITLE: 'Tic Tac Toe',
-    PLAYER_1_LABEL: 'Player 1:',
-    PLAYER_2_LABEL: 'Player 2:',
+    PLAYER_1_LABEL: 'Player 1: {{player}}',
+    PLAYER_2_LABEL: 'Player 2: {{player}}',
     ROUND_INFO: 'Number of rounds:',
     CURRENT_PLAYER: 'Current Player:',
     WINNER_MESSAGE: 'Congratulations! Winner:',
@@ -57,11 +57,17 @@ const translation = {
     COLOR_FOR_MENU_BACKGROUND: 'Menu background color:',
   },
   SCOREBOARD: {
-    VICTORIES_X: 'Victories X:',
-    VICTORIES_O: 'Victories O:',
+    VICTORIES_X: 'Victories {{player}} (X): {{score}}',
+    VICTORIES_O: 'Victories {{player}} (O): {{score}}',
     DRAWS: 'Draws:',
     RESET_BUTTON: 'Reset Score',
-    RESET_ARIA_LABEL: 'Reset score',
+    CHANGE_ROUNDS: 'Game Settings',
+    HOME: 'Translation',
+    ARIA_LABEL: {
+      RESET_ARIA_LABEL: 'Reset score',
+      CONFIG_ARIA_LABEL: 'Configure game',
+      HOME_ARIA_LABEL: 'Select translation',
+    },
   },
   TIMER: {
     TIMER_BOX: 'Remaining time:',

@@ -44,7 +44,7 @@ export default function Game() {
 
   useEffect(() => {
     if (gameOver && !gameFinished) {
-      setTimeout(resetGame, 1500);
+      setTimeout(resetGame, 1000);
     }
   }, [gameOver, gameFinished, resetGame]);
 
@@ -52,12 +52,8 @@ export default function Game() {
     <ThemeProvider theme={{ colors }}>
       <GameHeader>
         <GameTitle>{t('GAME.TITLE')}</GameTitle>
-        <PlayerName>
-          {t('GAME.PLAYER_1_LABEL')} <strong>{player1}</strong>
-        </PlayerName>
-        <PlayerName>
-          {t('GAME.PLAYER_2_LABEL')} <strong>{player2}</strong>
-        </PlayerName>
+        <PlayerName>{t('GAME.PLAYER_1_LABEL', { player: player1 })}</PlayerName>
+        <PlayerName>{t('GAME.PLAYER_2_LABEL', { player: player2 })}</PlayerName>
         <RoundInfo>
           {t('GAME.ROUND_INFO')} {rounds === 0 ? 11 : rounds}
         </RoundInfo>
@@ -74,7 +70,12 @@ export default function Game() {
           {t('GAME.CURRENT_PLAYER')} {currentPlayer}
         </CurrentPlayerText>
         <Timer timeLeft={timeLeft} />
-        <Scoreboard scores={scores} onReset={resetScores} />
+        <Scoreboard
+          player1={player1}
+          player2={player2}
+          scores={scores}
+          onReset={resetScores}
+        />
         <FloatingMenu colors={colors} onChangeColors={setColors} />
       </Container>
     </ThemeProvider>
