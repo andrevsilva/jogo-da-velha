@@ -17,19 +17,25 @@ No **século XIX**, ganhou popularidade no Ocidente, especialmente nos **Estados
 4. **Selecione o número de rodadas** (caso não selecione, será usado o padrão de **11 rodadas**).
 5. O tabuleiro é uma grade **3x3**.
 6. Um jogador utiliza o símbolo **X** e o outro **O**.
-7. Os jogadores se alternam posicionando seus símbolos em casas vazias.
-8. **Objetivo:** alinhar 3 símbolos iguais na **horizontal**, **vertical** ou **diagonal**.
+7. Os jogadores se alternam posicionando seus símbolos em casas vazias dentro do tempo de 5 segundos cada jogada.
+8. Caso o tempo de 5 segundos acabe e o jogador não realize a jogada, o símbolo será colocado automaticamente no tabuleiro, passando assim a vez.
+9. **Objetivo:** alinhar 3 símbolos iguais na **horizontal**, **vertical** ou **diagonal**.
 
 ---
 
 ## 🏆 Condições de Vitória
 
-- **Vitória:** o jogador que alinhar 3 símbolos iguais primeiro.
-- **Empate:** se todas as casas forem preenchidas sem que haja um vencedor.
+- **Vitória na rodada:** o jogador que alinhar 3 símbolos iguais primeiro vencendo.
+- **Empate na rodada:** se todas as casas forem preenchidas sem que haja um vencedor.
+- **Vitória no jogo:** o jogador que vencer o maior número de rodadas dentro da quantidade de rodadas escolhida será declarado vencedor.
 
 ---
 
 ## 🚀 Como Rodar o Projeto
+
+**Caso queira apenas jogar o game**
+
+Acesse o game pelo seu navegador de preferência ou celular atráves do: https://jogo-da-velha-mu-mauve.vercel.app
 
 1. **Clone este repositório:**
 
@@ -93,8 +99,8 @@ Além de escolher a linguagem e os nomes dos jogadores, é possível personaliza
 
 ## 📜 Licença
 
-Este projeto é de uso livre para fins de estudo e aprendizado.  
-Sinta-se à vontade para clonar, modificar e usar como base para outros projetos.
+Este projeto é de uso livre para fins de realização de um teste técnico.
+Sinta-se à vontade para clonar, jogar e utilizá-lo como base para outros projetos ou estudos.
 
 ---
 
