@@ -17,9 +17,9 @@ import {
   GameTitle,
   PlayerName,
   Container,
-  Title,
   CurrentPlayerText,
   defaultColors,
+  RoundInfo,
 } from './styles';
 
 export default function Game() {
@@ -58,21 +58,23 @@ export default function Game() {
         <PlayerName>
           {t('GAME.PLAYER_2_LABEL')} <strong>{player2}</strong>
         </PlayerName>
+        <RoundInfo>
+          {t('GAME.ROUND_INFO')} {rounds === 0 ? 11 : rounds}
+        </RoundInfo>
       </GameHeader>
       <GlobalStyle />
       <Container>
-        <Title>{t('GAME.TITLE')}</Title>
+        {gameFinished && (
+          <WinnerText>
+            {t('GAME.WINNER_MESSAGE')} {scores.X >= rounds ? player1 : player2}
+          </WinnerText>
+        )}
         <Board board={board} onCellClick={playMove} gameOver={gameOver} />
         <CurrentPlayerText>
           {t('GAME.CURRENT_PLAYER')} {currentPlayer}
         </CurrentPlayerText>
         <Timer timeLeft={timeLeft} />
         <Scoreboard scores={scores} onReset={resetScores} />
-        {gameFinished && (
-          <WinnerText>
-            {t('GAME.WINNER_MESSAGE')} {scores.X >= rounds ? player1 : player2}
-          </WinnerText>
-        )}
         <FloatingMenu colors={colors} onChangeColors={setColors} />
       </Container>
     </ThemeProvider>

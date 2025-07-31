@@ -22,6 +22,7 @@ export const WinnerText = styled.div`
   font-size: 1.4rem;
   font-weight: 700;
   margin-top: 15px;
+  margin-bottom: 10px;
   color: ${({ theme }) => theme.colors.text};
 `;
 
@@ -55,6 +56,17 @@ export const GameTitle = styled.h2`
 
 export const PlayerName = styled.p`
   font-size: 1rem;
+  color: ${({ theme }) => theme.colors.text};
+  margin: 4px 0;
+
+  strong {
+    font-weight: bold;
+    color: ${({ theme }) => theme.colors.xColor};
+  }
+`;
+
+export const RoundInfo = styled.p`
+  font-size: 1.2rem;
   color: ${({ theme }) => theme.colors.text};
   margin: 4px 0;
 

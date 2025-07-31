@@ -14,6 +14,7 @@ const translation = {
     TITLE: 'Tic Tac Toe',
     PLAYER_1_LABEL: 'Player 1:',
     PLAYER_2_LABEL: 'Player 2:',
+    ROUND_INFO: 'Number of rounds:',
     CURRENT_PLAYER: 'Current Player:',
     WINNER_MESSAGE: 'Congratulations! Winner:',
   },

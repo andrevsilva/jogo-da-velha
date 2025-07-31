@@ -14,6 +14,7 @@ const translation = {
     TITLE: 'Jogo da Velha',
     PLAYER_1_LABEL: 'Jogador 1:',
     PLAYER_2_LABEL: 'Jogador 2:',
+    ROUND_INFO: 'Número de rodadas:',
     CURRENT_PLAYER: 'Jogador Atual:',
     WINNER_MESSAGE: 'Parabéns! Jogador vencedor:',
   },
